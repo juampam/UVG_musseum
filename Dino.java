@@ -1,35 +1,38 @@
 package Musseum;
 
 public class Dino extends Specimen{
-	private String type;
+	private String kindOfDino;
 	private double size;
-	private double wight;
+	private double weight;
 
-	public Dino{
-	
+	public Dino(String type, String geo_age, String found_location String kindOfDino double size double weight ){
+	 	super(type, geo_age, found_location);
+	 	this.KindOfDino = kindOfDino;
+	 	this.size = size;
+	 	this.weight = weight;
 	}
 
 
 // getters and setters
 	
 	/**
-	 * Get type.
+	 * Get kindOfdino.
 	 *
-	 * @return type as String.
+	 * @return kindOfDino as String.
 	 */
-	public String getType()
+	public String getKindOfDino()
 	{
-	    return type;
+	    return kindOfDino;
 	}
 	
 	/**
-	 * Set type.
+	 * Set kindOfDino.
 	 *
 	 * @param type the value to set.
 	 */
-	public void setType(String type)
+	public void setKindOfDino(String kindOfDino)
 	{
-	    this.type = type;
+	    this.kindOfDino = kindOfDino;
 	}
 	
 	/**

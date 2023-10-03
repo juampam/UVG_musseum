@@ -4,8 +4,10 @@ public class Mammal extends Specimen{
 	private String diete;
 	private String habitat;
 
-	public Mammal{
-	
+	public Mammal(String type; String geo_age, String found_location, String diete, String habitat){
+		super(type,geo_age,found_location);
+		this.diete = diete;
+		this.habitat = habitat;
 	}
 
 	

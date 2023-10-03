@@ -1,33 +1,16 @@
 package Musseum;
 
 public class Plant extends Specimen{
-	private String Type;
+	private String kindOfPlant;
 	private String life_time;
+// Constructor
 
-	public Plant{
-	
-	}
-
-	
-	/**
-	 * Get Type.
-	 *
-	 * @return Type as String.
-	 */
-	public String getType()
-	{
-	    return Type;
+	public Plant(String type, String geo_age, String found_location, String kindOfPlant, String life_time){
+		super(type,geo_age,found_location);
+		this.kindOfPlant = kindOfPlant;
+		this.life_time = life_time;
 	}
 	
-	/**
-	 * Set Type.
-	 *
-	 * @param Type the value to set.
-	 */
-	public void setType(String Type)
-	{
-	    this.Type = Type;
-	}
 	
 	/**
 	 * Get life_time.
@@ -47,6 +30,26 @@ public class Plant extends Specimen{
 	public void setLife_time(String life_time)
 	{
 	    this.life_time = life_time;
+	}
+	
+	/**
+	 * Get kindOfPlant.
+	 *
+	 * @return kindOfPlant as String.
+	 */
+	public String getKindOfPlant()
+	{
+	    return kindOfPlant;
+	}
+	
+	/**
+	 * Set kindOfPlant.
+	 *
+	 * @param kindOfPlant the value to set.
+	 */
+	public void setKindOfPlant(String kindOfPlant)
+	{
+	    this.kindOfPlant = kindOfPlant;
 	}
 }
 
